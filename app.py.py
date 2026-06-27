@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1-7bHM4bGDC4lk0Mf-KNPzSsJKkIu0hyS
 """
 
+
 import pandas as pd
 import numpy as np
 
@@ -430,8 +431,6 @@ files.download("model_xgboost.pkl")
 #         </div>
 #         """, unsafe_allow_html=True)
 
-!rm -rf pages
-!mkdir pages
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile pages/1_Dashboard_Analysis.py
@@ -1772,12 +1771,8 @@ files.download("model_xgboost.pkl")
 # 
 #     st.progress(float(confidence))
 
-!pip install pyngrok
 
-!pip install streamlit
 
-!pkill -f streamlit
-!streamlit run app.py &>/content/logs.txt &
 
 from pyngrok import ngrok
 
@@ -1805,4 +1800,3 @@ files.download("metrics.pkl")
 from google.colab import files
 files.download('model_xgboost.pkl')
 files.download('test.csv')
-
