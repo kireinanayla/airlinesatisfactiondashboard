@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1-7bHM4bGDC4lk0Mf-KNPzSsJKkIu0hyS
 """
 
-!pip install xgboost
-
 import pandas as pd
 import numpy as np
 
